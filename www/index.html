@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>binbin</title>
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>233</h1> 
+    <script>
+      $(function(){
+        $.ajax({
+          type:'get',
+          url:'/getData',
+          success:function(res){
+            console.log(res);
+           // document.write(res);
+          },
+          error:function(err){
+            console.log(err)
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
